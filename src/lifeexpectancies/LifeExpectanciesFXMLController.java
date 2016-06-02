@@ -82,7 +82,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
         Alert message = new Alert(Alert.AlertType.INFORMATION);
         message.setTitle("Information about my graph");
         message.setHeaderText(null);
-        message.setContentText("This graph was made by Mia Swaggoner. It graphs life expectancies for females by country");
+        message.setContentText("This graph was made by Mia Swaggoner. It graphs life expectancies for females by country.");
         message.showAndWait();
     }
     
@@ -132,7 +132,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
         
         
     @FXML
-    public void handlChangeFilterAfrica(MouseEvent event){
+    public void handlChangeFilterAfrica(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
@@ -147,7 +147,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
     }
         
     @FXML
-    public void handlChangeFilterEurope(MouseEvent event){
+    public void handlChangeFilterEurope(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
@@ -162,7 +162,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
     }
 
     @FXML
-    public void handlChangeFilterAmericas(MouseEvent event){
+    public void handlChangeFilterAmericas(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
@@ -177,7 +177,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
     }
 
     @FXML
-    public void handlChangeFilterSouthEastAsia(MouseEvent event){
+    public void handlChangeFilterSouthEastAsia(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
@@ -192,7 +192,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
     }
     
     @FXML
-    public void handlChangeFilterWesternPacific(MouseEvent event){
+    public void handlChangeFilterWesternPacific(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
@@ -207,7 +207,7 @@ public class LifeExpectanciesFXMLController implements Initializable {
     }
     
     @FXML
-    public void handlChangeFilterEasternMed(MouseEvent event){
+    public void handlChangeFilterEasternMed(ActionEvent event){
         barChart.getData().clear();
         DataPoint[] points = data.getDataPoint();
         XYChart.Series<String, Number> dataSeries = new XYChart.Series();
